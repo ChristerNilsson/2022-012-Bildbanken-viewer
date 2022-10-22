@@ -56,7 +56,7 @@
 
 <span style="top:1%">{big.file.replaceAll('\\',' • ').replaceAll("_"," ")}</span>
 {#if big.exifState >= 1}
-	<span style="top:3%"> {round(big.bigWidth * big.bigHeight/1000000,1)} MP • {big.bigWidth} x {big.bigHeight} • {round(big.bigSize/1000000,1)} MB</span>
+	<span style="top:3%"> {round(big.bigWidth * big.bigHeight/1000000,1)} MP • {big.bigWidth} x {big.bigHeight} • {round(big.size/1000000,1)} MB</span>
 {/if}
 {#if big.exifState == 2}
 	<span style="top:5%;"> {exif.DateTimeOriginal.replace(" "," • ")} </span>
